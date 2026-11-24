@@ -4,12 +4,12 @@ Markdown notes that format as you type. They're kept in one SQLite file on
 your own Mac and reached from your phone over Tailscale. Nothing is in the
 cloud, and there's no account.
 
-<img src="docs/screenshots/desktop.png" alt="Quire in a wide window: the list of notes with tag filters and a pinned note on the left, and a packing list with ticked and unticked boxes under two headings on the right" />
+<img src="docs/screenshots/desktop-notes.png" alt="Quire in a wide window: the list of notes with tag filters and a pinned note on the left, and a packing list with ticked and unticked boxes under two headings on the right" />
 
 <table>
   <tr>
-    <td width="33%"><img src="docs/screenshots/phone-list.png" alt="On a phone: the list of notes, with search, tag filters and a pinned note" /></td>
-    <td width="33%"><img src="docs/screenshots/phone-note.png" alt="On a phone: a packing list with tappable boxes; ticked items are struck through" /></td>
+    <td width="33%"><img src="docs/screenshots/phone-notes.png" alt="On a phone: the list of notes, with search, tag filters and a pinned note" /></td>
+    <td width="33%"><img src="docs/screenshots/phone-packing.png" alt="On a phone: a packing list with tappable boxes; ticked items are struck through" /></td>
     <td width="33%"><img src="docs/screenshots/phone-recipe.png" alt="On a phone: a recipe with bullets, numbered steps and a quote" /></td>
   </tr>
 </table>

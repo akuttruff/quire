@@ -20,9 +20,9 @@ const DESKTOP = { width: 1280, height: 800, deviceScaleFactor: 2, mobile: false 
 
 /** Each shot: a screen size, and the note to open (by title), if any. The app is always dark. */
 const SHOTS = [
-  { name: 'desktop', screen: DESKTOP, note: 'Trip packing' },
-  { name: 'phone-list', screen: PHONE },
-  { name: 'phone-note', screen: PHONE, note: 'Trip packing' },
+  { name: 'desktop-notes', screen: DESKTOP, note: 'Trip packing' },
+  { name: 'phone-notes', screen: PHONE },
+  { name: 'phone-packing', screen: PHONE, note: 'Trip packing' },
   { name: 'phone-recipe', screen: PHONE, note: 'Lemon pasta' },
 ]
 
