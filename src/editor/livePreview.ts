@@ -264,7 +264,7 @@ const theme = EditorView.theme({
     border: 'solid var(--panel)', borderWidth: '0 2px 2px 0', transform: 'rotate(45deg)',
   },
   '.cm-done': { color: 'var(--muted)', textDecoration: 'line-through', textDecorationColor: 'var(--line-strong)' },
-})
+}, { dark: true })
 
 /** Run a command; true when it applied (so the key does nothing else). */
 const run = (cmd: (s: EditorState) => TransactionSpec | null) => (view: EditorView): boolean => {

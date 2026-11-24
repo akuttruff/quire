@@ -10,7 +10,7 @@ cloud, and there's no account.
   <tr>
     <td width="33%"><img src="docs/screenshots/phone-list.png" alt="On a phone: the list of notes, with search, tag filters and a pinned note" /></td>
     <td width="33%"><img src="docs/screenshots/phone-note.png" alt="On a phone: a packing list with tappable boxes; ticked items are struck through" /></td>
-    <td width="33%"><img src="docs/screenshots/phone-dark.png" alt="On a phone in dark mode: a recipe with bullets, numbered steps and a quote" /></td>
+    <td width="33%"><img src="docs/screenshots/phone-recipe.png" alt="On a phone: a recipe with bullets, numbered steps and a quote" /></td>
   </tr>
 </table>
 

@@ -18,13 +18,12 @@ const PORT = Number(process.env.CHROME_PORT ?? 9341)
 const PHONE = { width: 375, height: 812, deviceScaleFactor: 3, mobile: true }
 const DESKTOP = { width: 1280, height: 800, deviceScaleFactor: 2, mobile: false }
 
-/** Each shot: a screen size, a colour scheme, and the note to open (by title), if any. */
+/** Each shot: a screen size, and the note to open (by title), if any. The app is always dark. */
 const SHOTS = [
-  { name: 'desktop', screen: DESKTOP, scheme: 'light', note: 'Trip packing' },
-  { name: 'desktop-dark', screen: DESKTOP, scheme: 'dark', note: 'Lemon pasta' },
-  { name: 'phone-list', screen: PHONE, scheme: 'light' },
-  { name: 'phone-note', screen: PHONE, scheme: 'light', note: 'Trip packing' },
-  { name: 'phone-dark', screen: PHONE, scheme: 'dark', note: 'Lemon pasta' },
+  { name: 'desktop', screen: DESKTOP, note: 'Trip packing' },
+  { name: 'phone-list', screen: PHONE },
+  { name: 'phone-note', screen: PHONE, note: 'Trip packing' },
+  { name: 'phone-recipe', screen: PHONE, note: 'Lemon pasta' },
 ]
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms))
@@ -59,7 +58,6 @@ await send('Page.enable')
 mkdirSync(OUT, { recursive: true })
 for (const shot of SHOTS) {
   await send('Emulation.setDeviceMetricsOverride', shot.screen)
-  await send('Emulation.setEmulatedMedia', { features: [{ name: 'prefers-color-scheme', value: shot.scheme }] })
   const id = shot.note ? idOf(shot.note) : null
   if (shot.note && !id) { console.error(`quire: no demo note "${shot.note}"; run npm run demo:data`); process.exit(1) }
   await send('Page.navigate', { url: 'about:blank' })
