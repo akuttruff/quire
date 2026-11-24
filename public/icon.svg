@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <!-- Full-bleed opaque ground: iOS masks to its own squircle. -->
+  <rect width="512" height="512" fill="#444444"/>
+  <!-- A quire: folded sheets gathered at the spine, the top one opened in blue. -->
+  <g fill="none" stroke-linejoin="round">
+    <path d="M256 150 L136 124 L136 372 L256 398 Z" fill="#FFFFFF" opacity="0.55"/>
+    <path d="M256 150 L376 124 L376 372 L256 398 Z" fill="#FFFFFF" opacity="0.75"/>
+    <path d="M256 168 L150 146 L150 356 L256 380 Z" fill="#FFFFFF" opacity="0.85"/>
+    <path d="M256 168 L362 146 L362 356 L256 380 Z" fill="#3D92C9"/>
+    <path d="M256 150 L256 398" stroke="#2B2B2B" stroke-width="6"/>
+  </g>
+  <g stroke="#FFFFFF" stroke-width="10" stroke-linecap="round" opacity="0.9">
+    <path d="M282 196 L338 186"/>
+    <path d="M282 232 L338 222"/>
+    <path d="M282 268 L322 261"/>
+  </g>
+</svg>
